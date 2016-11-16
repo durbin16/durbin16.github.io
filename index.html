@@ -6,25 +6,30 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=News+Cycle|Nobile');
         a{color:#FFFFFF;}
-        nav{background-color:#1dc47c;font-family:Nobile, monospace,sans-serif;}
+        #toolbar{background-color:#1dc47c; position:relative;}
+        nav{font-family:Nobile, monospace,sans-serif;}
         nav{color:#FFFFFF;font-size:1.1em;}
-        #rough{background-color:#1dc47c;font-family:Nobile,monospace, sans-serif;}
-        .leftcol{width:48%;}
-        .rightcol{width:48%;}
-        h1,h2,h3,h4,h5,h6{color:#1f0ba0;font-family:NewsCycle, cursive,sans-serif;font-size:1.4em;}
+        #rough{background-color:#1dc47c;font-family:Nobile,monospace, sans-serif;display: flex;flex-flow: row wrap;}
+        .leftcol{width:48%; position: relative; margin-right: auto;flex: 1 0 15em;margin: .5em;}
+        .rightcol{width:48%;position: relative; margin-left: auto;flex: 1 0 15em;margin: .5em;}
+        h1,h2,h3,h4,h5,h6{color:#1f0ba0;font-family:NewsCycle, cursive,sans-serif;font-size:1.8em;}
+        img {max-width: 100%;}
         .rush-info{color:#FFFFFF;}
+        #banner{flex: 1 1 auto;}
         #bottom-row{text-align: center;width: 70%; margin: 0 auto;font-family:Nobile, monospace;}
-        #relax{font-family:Nobile, monospace;}
+        #relax{font-family:Nobile, monospace;display: flex;flex-flow: row wrap;}
         #content{width: 90%; max-width:960px; margin: 0 auto;}
-        #social-media{text-align: center;}
+        #social-media{display: flex;flex-flow: row-reverse;justify-content: space-between; height: 55px;}
+        #copyright{text-align: left}
         section{padding: 15px;}
-        p{line-height: 1.5;}
+        p{line-height: 1.5;font-size: 1.2em} 
+        h2{text-align: center}
     </style>
 </head>
     <body>
         <div id="content">
         <img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar Boating Logo" width="115" height="100">
-        
+        <div id="toolbar" width="940">
         <nav><ul>
             <li><a target="_blank" href="index.html">Home</a></li>
             <li><a target="_blank" href="index.html">Rivers</a></li>
@@ -33,14 +38,15 @@
             <li><a target="_blank" href="index.html">Rates/Dates</a></li>
             <li><a target="_blank" href="index.html">Contact Us</a></li>
         </ul></nav>
+            </div>
         
-        <div id="banner"><img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" alt="Banner Image" width="940" height="250"></div>
+        <div id="banner"><img src="http://brothert.net/dryoar/images/littlecolorado-wide.jpg" alt="Banner Image" width="960" height="254"></div>
         
         <section id="relax">
             
         <div class="leftcol">
             
-        <h2>We run Rivers to Relax.</h2>
+        <h2>WE RUN RIVERS TO RELAX</h2>
         
         <p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p>
         
@@ -60,7 +66,7 @@
         
         <div class="rightcol">
         
-        <h2>We run Whitewater for the Rush!</h2>
+        <h2>WE RUN WHITEWATER FOR THE RUSH</h2>
         
         <p class="rush-info">That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</p>
         
@@ -70,17 +76,17 @@
         
         <section id="bottom-row">
         
-        <h2>Join Us</h2>
+        <h2>JOIN US</h2>
         
         <p>We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
         
         </section>
         
-        <footer id="social-media">
-            <a target="_blank" href="https://www.facebook.com"><img src="Facebook%20Logo.png" alt= "Facebook" width="50"/></a>
+        <footer id="social-media" height:55px;>
+            <div><a target="_blank" href="https://www.facebook.com"><img src="Facebook%20Logo.png" alt= "Facebook" width="50"/></a>
             <a target="_blank" href="https://www.instagram.com"><img src="Instagram%20Logo.png" alt= "Instagram" width="51"/></a>
-            <a target="_blank" href="https://www.youtube.com"><img src="Youtube%20Logo.png" alt= "YouTube" width="54"/></a>
-        <p>&copy; 2016 Dry Oar || Katie Durbin </p>
+                <a target="_blank" href="https://www.youtube.com"><img src="Youtube%20Logo.png" alt= "YouTube" width="54"/></a></div>
+            <p id="copyright">&copy; 2016 Dry Oar || Katie Durbin </p>
         
         </footer>
         </div>
