@@ -1,13 +1,48 @@
         @import url('https://fonts.googleapis.com/css?family=News+Cycle|Nobile');
         a{
             color:#FFFFFF;}
+        body{
+            background-color:darkgray;}
         #toolbar{
             background-color:#1dc47c;
             position:relative;}
+        #banner{
+            flex: 1 1 auto;}
+        #logo{
+            position: relative;
+            z-index: 10;
+            background-color: white;
+            width: 110px;
+            border: 3px solid darkred;
+            margin-left: 1em;
+            margin-bottom: 1em;}
         nav{
             font-family:Nobile, monospace,sans-serif;
             color:#FFFFFF;
-            font-size:1.1em;}
+            font-size:1.3em;
+            line-height:3em;
+            margin-top: -5em;
+            padding-left: 100px;}
+        nav li{
+            display: inline-block}
+        nav a:link, nav a:normal {
+            color:#1f0ba0;
+            text-decoration: none;}
+        nav a:link, nav a:active {
+            color:1f0ba0;
+            text-decoration: none;}
+        nav a:link, nav a:visited {
+            color:darkred;
+            text-decoration: none;}
+        nav a:link, nav a:hover {
+            color:white;
+            text-decoration:none;}
+        nav ul{
+            margin: 0;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            display: flex;
+            list-style-type: none;}
         #rough{
             background-color:#1dc47c;
             font-family:Nobile,monospace, sans-serif;
@@ -32,8 +67,6 @@
         img {max-width: 100%;}
         .rush-info{
             color:#FFFFFF;}
-        #banner{
-            flex: 1 1 auto;}
         #bottom-row{
             text-align: center;
             width: 70%; margin: 0 auto;
