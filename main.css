@@ -26,7 +26,7 @@
         nav li{
             display: inline-block}
         nav a:link {
-            color:yellow;
+            color:#1f0ba0;
             text-decoration: none;}
         nav a:active {
             color:#1f0ba0;
