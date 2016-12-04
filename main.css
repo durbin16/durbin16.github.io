@@ -8,6 +8,10 @@
             position:relative;}
         #banner{
             flex: 1 1 auto;}
+        h1{
+            text-align: center;
+            font-size: 3em;
+            font-family:NewsCycle,cursive,sans-serif}
         #logo{
             position: relative;
             z-index: 10;
@@ -60,11 +64,14 @@
             margin-left: auto;
             flex: 1 0 15em;
             margin: .5em;}
-        h1,h2,h3,h4,h5,h6{
+        h2,h3,h4,h5,h6{
             color:#1f0ba0;
             font-family:NewsCycle,cursive,sans-serif;
             font-size:1.8em;}
-        img {max-width: 100%;}
+        h2{
+            padding: 10px}
+        img {
+            max-width: 100%;}
         .rush-info{
             color:#FFFFFF;}
         #bottom-row{
@@ -86,10 +93,15 @@
             height: 55px;}
         #copyright{
             text-align: left}
-        section{
-            padding: 15px;}
         p{
             line-height: 1.5;
-            font-size: 1.2em} 
+            font-size: 1.3em;
+            font-family: sans-serif;} 
         h2{
             text-align: center}
+        #main-fork{
+            flex: 1 1 auto;}
+        #gray{
+            flex: 1 1 auto;}
+        #grand{
+            flex: 1 1 auto;}
