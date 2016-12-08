@@ -57,13 +57,19 @@
             position: relative;
             margin-right: auto;
             flex: 1 0 15em;
-            margin: .5em;}
+            margin: 1.5em;
+            padding-left: 10px}
         .rightcol{
             width:48%;
             position: relative;
             margin-left: auto;
             flex: 1 0 15em;
-            margin: .5em;}
+            margin: .5em;
+            padding-right: 30px;}
+        #longimages{
+            display: block;
+            margin: auto;
+            width: 40%;}
         h2,h3,h4,h5,h6{
             color:#1f0ba0;
             font-family:NewsCycle,cursive,sans-serif;
@@ -81,7 +87,8 @@
         #relax{
             font-family:Nobile, monospace;
             display: flex;
-            flex-flow: row wrap;}
+            flex-flow: row wrap;
+            padding-top: 30px}
         #content{
             width: 90%;
             max-width:960px;
